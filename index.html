@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Mid Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Montserrat:600" rel="stylesheet">
+    </head>
+    <body>
+      <!-- Back to top button -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><img id="up-arrow" src="./resources/thin-arrow-top-icon.svg" 
+      alt="Up arrow" style="height: 2rem;width: auto;"></button>
+
+      <!-- Header section -->
+      <header>
+        <div id="logo">
+          <a href="#"><img src="./resources/logo.png" alt="Company Logo" style="height: auto;width: 110px;"></a>
+        </div>
+        <nav class="desktop">
+          <div class="box-1">
+          <a href="#about-us" class="btn btn-one">About us</a>
+          <a href="#team" class="btn btn-one">Team</a>
+          <a href="#contact" class="btn btn-one">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+      <!-- About section -->
+      <section id="about-us">
+        <div id="about-info">
+          <h1>The Mid Company</h1>
+          <h2>Who are we?</h2>
+        </div>
+        <div id="about-paras">
+          <p>Welcome to The Mid Company, where excellence meets mediocrity in the most extraordinary way. 
+            We specialize in the art of not specializing, bringing you the finest assortment of nothing in particular. 
+            With a commitment to the average, we've mastered the fine line between standing out and blending in.</p>
+          <p>At The Mid Company, we believe in the power of the almost-extraordinary. 
+            Our groundbreaking approach to doing just enough has earned us the respect of absolutely no one and the admiration of... 
+            well, not many. But fear not, as our indifference is what sets us apart.</p>
+          <p>So, whether you're looking for not-too-special solutions or almost-there innovations, trust The Mid Company 
+            to be your source of perfectly adequate everything. Because why settle for greatness when you can have just enough? 
+            Welcome to the pinnacle of almost excellence!</p>
+        </div>
+      </section>
+
+      <!-- Team section -->
+      <section id="team">
+        <h2>Our Team</h2>
+        <div id="team-comp">       
+        <div class="team-member">
+          <img src="./resources/john-smith.webp" alt="John Wick character" style="height: auto;width: 220px;">
+          <h3>John Smith - CEO</h3>
+          <h4>Meet Maverick John Smith, our tie-wearing CEO extraordinaire. 
+            With a flair for the dramatic and a love for innovation, he turns challenges into adventures. 
+            Maverick John is not your typical captain; he's the Shakespearean hero of the corporate world, juggling 
+            ideas and oranges with equal&nbsp;panache.</h4>
+        </div>
+        <div class="team-member">
+          <img src="./resources/john-john.webp" alt="Placeholder image" style="height: auto;width: 220px;">
+          <h3>John John - CFO</h3>
+          <h4>Dollar Dynamo John John, our CFO with a financial superhero vibe. 
+            Sunglasses indoors, a cape made of expense reports, and a talent for budget balancing that rivals a unicycle 
+            ride – he's the maestro of dollars and cents. In the world of finance, Dollar Dynamo John is the unsung hero, 
+            turning every financial statement into a thrilling fiscal&nbsp;saga.</h4>
+        </div>
+        <div class="team-member">
+          <img src="./resources/smith-smith.webp" alt="Jim Halpert from the TV Series: The Office" style="height: auto;width: 220px;">
+          <h3>Smith Smith - CTO</h3>
+          <h4>Code Maestro Smith, our tech wizard and CTO. With a laptop emitting a neon glow and a desk adorned with robot 
+            figurines, he transforms coding into a digital symphony. Amidst lines of code and impromptu Nerf gun battles, Code Maestro 
+            Smith leads our digital orchestra. Underneath the hoodie, you'll find a tech guru with a sharp sense of humor and 
+            debugging skills that rival his&nbsp;wit.</h4>
+        </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact">
+        <div id="contact-us">
+          <h2 class="dark">Contact information</h2>
+          <div id="contact-details">
+            <h3>Email:</h3>
+            <h4>hello@themidcompany.com</h4>
+            <h3>Phone:</h3>
+            <h4>555-666-7890</h4>
+          </div>
+        </div>
+      </section>
+      </main>
+      <footer>
+        <h5>@copyright The Mid Company 2024</h5>
+      </footer>
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 300px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+    </body>
+</html>
