@@ -132,7 +132,7 @@ div[class*=box] {
 
 /* About us section */
 #about-us {
-  background-image: url(./resources/artem-kniaz.jpg);
+  background-image: url(./resources/artem-kniaz.webp);
   background-repeat: no-repeat;
   background-position: center bottom 10%;
   background-size: cover;
@@ -180,7 +180,7 @@ div[class*=box] {
 /* Team section */
 #team {
   padding: 5rem 0;
-  background: url('./resources/dark-bg.jpg') no-repeat center bottom 65%;
+  background: url('./resources/dark-bg.webp') no-repeat center bottom 65%;
   background-color: #1a1917;
   border-top: 1px solid #000;
 }
